@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+int i;
+int x;
+string y;
+string y1 = "abo";
+	 
+int main(int argc, char** argv) {
+	
+	
+	cout << "tqveni saxeli: ";
+	cin >> y;
+	if (y != y1){
+		cout<< "ramdenjer gsurt daibechdos tqveni saxeli? ";
+		cin >> i;
+	
+	for (x>0;x<i;x++){
+		cout << y <<endl;
+	}
+	} else {
+	
+		for (i=0;i<3;i++){
+			cout<< y1<<endl;
+		}
+	}
+	return 0;
+}
