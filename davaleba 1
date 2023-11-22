@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string y;
+    int x;
+
+    cout << "tqveni asaki: ";
+    cin >> x;
+    cin.ignore();
+
+    if (x >= 18) {
+        cout << "tqveni saxeli da gvari: ";
+        getline(cin, y);
+
+        if (y == "abo mukhadze") {
+            cout << "gamarjoba abo mukhadze";
+        } else {
+            cout << "momxmarebeli ver moidzebna";
+        }
+    } else {
+        cout << "es programa tqventvis ar aris";
+    }
+
+    return 0;
+}
