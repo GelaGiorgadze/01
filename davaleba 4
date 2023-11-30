@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+ using namespace std;
+
+string generatepassword(int length){
+    	
+    	const string  characters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()<>";
+    	const int charlength = characters.length();
+        string password = "";
+    	
+    	srand (static_cast <unsigned int>(time(0)));
+    	
+    	for (int i=0; i<length;++i){
+    		int randindex = rand () % charlength;
+    		password += characters [randindex];
+    		
+		}return password;
+}
+
+int main(int argc, char** argv) {
+	
+	int passwordlength;
+	cout << "please enter a valid password length: ";
+	cin>>passwordlength;
+     if (passwordlength<=0){
+     	cout<< "please enter valid password length";
+     	return 1;
+	 } else {
+	 	string password = generatepassword(passwordlength);
+	 	cout << "Generated password: "<<password<<endl;
+	 }
+	return 0;
+}
