@@ -1,0 +1,41 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    char moqmedeba;
+    int rendomi1;
+    int rendomi2;
+
+    srand(static_cast<unsigned int>(time(0)));
+
+    int randomnumber1 = rand() % 100000;
+    int randomnumber2 = rand() % 100000;
+
+    cout << "tqveni ricxvebia: " << randomnumber1 << ", " << randomnumber2 << endl;
+    cout << "ra matematikuri moqmedeba gsurt chaatarot? " << endl;
+    cin >> moqmedeba;
+
+    switch (moqmedeba) {
+        case '+':
+            cout << randomnumber1 + randomnumber2 << endl;
+            break;
+
+        case '-':
+            cout << randomnumber1 - randomnumber2 << endl;
+            break;
+
+        case '*':
+            cout << randomnumber1 * randomnumber2 << endl;
+            break;
+
+        case '/':
+            cout << randomnumber1 / randomnumber2 << endl;
+            break;
+    }
+
+    system("pause");
+    return 0;
+}
